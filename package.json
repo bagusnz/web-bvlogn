@@ -4,16 +4,20 @@
   "description": "full stack bvlogn web",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index,js",
-    "dev": "nodemon server/index.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "author": "Bagus Nanda",
   "license": "ISC",
   "dependencies": {
     "body-parse": "^0.1.0",
     "cors": "^2.8.5",
+    "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "mongodb": "^3.1.10"
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.4.16",
+    "path": "^0.12.7",
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"

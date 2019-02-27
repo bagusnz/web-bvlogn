@@ -1,0 +1,59 @@
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.display-4{
+	font-size: 6rem;
+	font-weight: bold;
+}
+
+.card-body{
+	height: 20rem;
+	border-color: #c82333;
+}
+
+.card{
+	margin-bottom: 2rem;
+}
+
+.card:hover{
+}
+
+.card-title{
+	font-weight: bold;
+	color: #c82333;
+}
+
+.jumbotron{	
+	background-color: #c82333;
+	color: white;
+}
+
+.btn-youtube{
+	width: 80%;
+	bottom: 1rem;
+	left: 8%;
+	position: absolute;
+}
+
+.pagination .page-item.active .page-link{
+	background-color: #ff3547;
+	border-color: #ff3547;
+}
+.pagination .page-item.active .page-link:hover{
+	background-color: #c82333;
+	border-color: #c82333;
+}
+
+.disable{
+	pointer-events: none;
+	cursor: not-allowed;
+}
+
+#ytsubscribe{
+	background-color: #fff;
+}
+
+.page-footer{
+	background-color: #c82333;
+}
