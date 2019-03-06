@@ -1,6 +1,11 @@
+/**
+ * Controller for accessing /videos page
+ */
+
 const request = require('request');
 const Apikey = require('../model/Apikey');
 
+/** Handling GET request */
 exports.get = (req, res) => {
     Apikey.findOne({name:'youtube'}, (err, result) => {
         let apikey = result.key;

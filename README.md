@@ -1,3 +1,9 @@
+# About
+
+A personal project created by Bagus Nanda for the use of personal improvement in learning Full Stack Web Development.
+
+### Developer
+
 Run backend from /:
 
 `npm run dev`

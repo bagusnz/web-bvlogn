@@ -1,5 +1,10 @@
+/**
+ * Controller for accessing /comments page.
+ */
+
 const Comment = require('../model/Comment');
 
+/** Handling GET request */
 exports.get = (req, res) => {
     Comment.find((err, data) => {
         if(err){
@@ -13,6 +18,7 @@ exports.get = (req, res) => {
     });
 };
 
+/** Handling POST request */
 exports.post = (req, res) => {
     let comment = new Comment(
         {
@@ -30,22 +36,12 @@ exports.post = (req, res) => {
     });
 };
 
+/** Handling PUT request, not yet implemented */
 exports.update = (req, res) => {
-    Comment.findByIdAndUpdate(req.params.id, {text: req.body.text}, (err) => {
-        if (err){
-            res.status(401).send();
-        } else {
-            res.redirect('/comments');
-        }
-    });
+    res.redirect('/comments');
 };
 
+/** Handling DELETE request, not yet implemented */
 exports.delete = (req, res) => {
-    Comment.findByIdAndDelete(req.params.id, (err) => {
-        if (err){
-            res.status(401).send();
-        } else {
-            res.redirect('/comments');
-        }
-    });
+    res.redirect('/comments');
 };

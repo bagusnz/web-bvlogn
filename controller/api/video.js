@@ -1,5 +1,9 @@
-const Video = require('../../model/Video');
+/**
+ * Controller for managing videos through API.
+ * NOT USED.
+ */
 
+const Video = require('../../model/Video');
 
 /** Handling GET request */
 exports.get = (req, res) => {
