@@ -2,18 +2,18 @@ const express = require('express');
 
 const router = express.Router();
 
-const apikey_controller = require('../../controller/api/apikey');
+const api_apikey_controller = require('../../controller/api/apikey');
 
 // Get comments
-router.get('/', apikey_controller.get);
+router.get('/', api_apikey_controller.get);
 
 // Add comment
-router.post('/', apikey_controller.post);
+router.post('/', api_apikey_controller.post);
 
 // Update comment
-router.put('/:id', apikey_controller.update);
+router.put('/:id', api_apikey_controller.update);
 
 // Delete comment
-router.delete('/:id', apikey_controller.delete);
+router.delete('/:id', api_apikey_controller.delete);
 
 module.exports = router;

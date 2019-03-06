@@ -8,7 +8,9 @@
     </div>
     
     <div class="container card hoverable py-4">
-        <form action="/api/comments" method="POST">
+        <form action="/comments" method="POST">
+            <h3 class="card-title">Say something...</h3>
+            <hr>
             <div class="form-group">
                 <label for="inputName">Name</label>
                 <input type="text" class="form-control" id="inputName" name="name">
@@ -20,6 +22,21 @@
             
             <button type="submit" class="btn btn-danger">Comment!</button>
         </form>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <%comments.forEach((comment)=>{ %>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="card hoverable" >
+                        <div class="card-body" style="height:auto;">
+                            <h5 class="card-title">"<%=comment.text%>"</h5>
+                            <p class="card-text">- <%=comment.name%></p>
+                        </div>
+                    </div>
+                </div>
+            <%})%>
+        </div>
     </div>
 
 <% include comment/footer.ejs%>

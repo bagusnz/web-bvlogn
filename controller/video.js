@@ -23,5 +23,4 @@ exports.get = (req, res) => {
             });
         });
     });
-
 };

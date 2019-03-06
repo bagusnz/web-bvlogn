@@ -57,3 +57,7 @@ body{
 .page-footer{
 	background-color: #c82333;
 }
+
+a:hover{
+	color: black;
+}

@@ -14,6 +14,7 @@ app.use(cors());
 const control_apikey = require("./routes/api/apikey");
 const control_comment = require("./routes/api/comment");
 const control_video = require('./routes/api/video');
+const root = require('./routes/root');
 const videos = require('./routes/video');
 const comments = require('./routes/comment');
 
@@ -27,6 +28,7 @@ mongoose.connect(mongodb, {useNewUrlParser: true, useFindAndModify: false});
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error: ')); 
 
+app.use('/', root);
 app.use('/videos', videos);
 app.use('/comments', comments);
 app.use('/api/apikeys', control_apikey);
